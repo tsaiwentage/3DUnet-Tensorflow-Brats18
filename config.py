@@ -43,7 +43,7 @@ TEST_FLIP = False
 DYNAMIC_SHAPE_PRED = False
 # change PATCH_SIZE in inference if cropped brain region > PATCH_SIZE
 ADVANCE_POSTPROCESSING = True
-BATCH_SIZE = 2
+BATCH_SIZE = 1  # 2
 PATCH_SIZE = [128, 128, 128]
 INFERENCE_PATCH_SIZE = [128, 128, 128]
 INTENSITY_NORM = 'modality' # different norm method
