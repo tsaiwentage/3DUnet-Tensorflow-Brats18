@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # File: data_loader.py
+# 读取数据：数据集路径需要改变
 
 import numpy as np
 import os
@@ -124,7 +125,8 @@ class BRATS_SEG(object):
         return ret
 
 if __name__ == '__main__':
-    brats2018 = BRATS_SEG("/data/dataset/BRATS2018/", "training")
+    # brats2018 = BRATS_SEG("/data/dataset/BRATS2018/", "training")
+    brats2018 = BRATS_SEG("/data/3DUnet-Tensorflow-Brats18", "training")
     brats2018 = brats2018.load_3d()
     print(len(brats2018))
     print(brats2018[0])

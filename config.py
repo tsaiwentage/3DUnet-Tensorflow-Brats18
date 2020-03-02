@@ -51,8 +51,8 @@ STEP_PER_EPOCH = 500
 EVAL_EPOCH = 10
 
 # data path
-#basedir="/data/dataset/BRATS2018/{mode}/{HGG/LGG}/patient_id/{flair/t1/t1ce/t2/seg}"
-#BASEDIR = "/data/dataset/BRATS2018/" #'/data/dataset/BRATS2018/'
+# basedir="/data/dataset/BRATS2018/{mode}/{HGG/LGG}/patient_id/{flair/t1/t1ce/t2/seg}"
+# BASEDIR = "/data/dataset/BRATS2018/" #'/data/dataset/BRATS2018/'
 BASEDIR = "/data/3DUnet-Tensorflow-Brats18"
 TRAIN_DATASET = ['training']
 VAL_DATASET = 'val'   # val or val17 
