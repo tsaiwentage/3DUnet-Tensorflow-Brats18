@@ -131,6 +131,9 @@ if __name__ == '__main__':
 
     if args.gpu:
         os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
+        # 控制显存
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+        sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) 
 
     if args.visualize or args.evaluate:
         if config.DYNAMIC_SHAPE_PRED:
